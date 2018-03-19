@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>СGroup</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#71357B">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="logo col-2">
+					<a href=""><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<nav class="col-md-6 col-sm-12">
+					<a href="">Поиск</a>
+					<a href="">Мои переписки</a>
+					<a href="">Избранное</a>
+					<a href="">Кто смотрел</a>
+				</nav>
+				<div class="account col-4">
+					<span>Премиум</span>
+					<img src="/img/info-icon.png" height="14px" title="Информация про премиум подписку" alt="info-icon">
+					<a href="">100 кредитов</a>
+					<a href=""> <img src="img/profile-photo.png" alt="profile-photo"> </a>
+					<a href=""><img src="img/dropdown-icon.png" alt="dropdown"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="top-girls">
+		<div class="container">
+			<div class="row">
+				<div class="top-girl__photo">
+					<a href="">
+						<img src="img/top-girl1.png" alt=""></a></div>
+				<div class="top-girl__photo">
+					<a href="">
+						<img src="img/top-girl2.png" alt=""></a></div>
+				<div class="top-girl__photo">
+					<a href="">
+						<img src="img/top-girl3.png" alt=""></a></div>
+				<div class="top-girl__photo">
+					<a href="">
+						<img src="img/top-girl4.png" alt=""></a></div>
+				<div class="top-girl__photo">
+					<a href="">
+						<img src="img/top-girl5.png" alt=""></a></div>
+				<div class="top-girl__photo">
+					<a href="">
+						<img src="img/top-girl6.png" alt=""></a></div>
+				<div class="top-girl__photo">
+					<a href="">
+						<img src="img/top-girl7.png" alt=""></a></div>
+				<div class="top-girl__photo">
+					<a href="">
+						<img src="img/top-girl8.png" alt=""></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="search">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 search__title">
+					Я ищу
+				</div>
+				<div class="search__select-style ">
+					<img src="/img/select-icon.png" alt="select-icon" class="select-style__icon">
+					<select class="custom-select" id="change-sex">
+						<option selected value="1">Девушку</option>
+						<option value="2">Парня</option>
+						<option value="3">Динозаврика</option>
+						<option value="4">Пусечку</option>
+						<option value="5">Хорошую жизнь</option>
+					</select>
+				</div>
+				<div class="search__city">
+					<input type="text" value="Санкт-Петербург" placeholder="Город" class="input-clearable">
+				</div>
+				<div class="search__age">
+					<div class="search__age-title">Возраст</div> 
+					<div id="search__age-range"></div>
+				</div>
+				<div class="search__button">НАЙТИ</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="advanced-search">
+		<div class="advanced-search__line"></div>
+		<div class="advanced-search__dropdown">
+			<div class="advanced-search__title">
+				Расширеный поиск
+			</div>
+			<img src="/img/select-icon.png" alt="select-icon" class="advanced-search__icon">
+		</div>
+		<div class="advanced-search__line"></div>
+	</div>
+
+	<div class="result">
+		<div class="container">
+			<div class="row justify-content-start">
+				<div class="result__categories">
+					<div class="result__category" data-category="online">Онлайн</div>
+					<div class="result__category selected" data-category="new">Новые</div>
+					<div class="result__category" data-category="popular">Популярные</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 profile" data-online="true" data-new="true" data-popular="true" data-favorite="false">
+					<div class="profile__top">
+						<img src="img/kristinochka.png" alt="" class="profile__photo">
+						<div class="profile__top-photos">
+							<img src="img/photos-icon.png" alt="photos">
+							<div>12</div> 
+						</div>
+						<div class="profile__top-popular">ТОП</div>
+						<div class="profile__top-contacts">
+							<div class="profile__top-contacts__favorite">
+								<div class="favorite-img"></div>
+								Избранное
+							</div>
+							<div class="profile__top-contacts__message">
+								<img src="img/message-icon.png" alt="message">
+								Написать
+							</div>
+						</div>
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-title"><div>
+							Кристиночка, 28</div>
+							<div class="profile__info-online"></div>
+						</div>
+						<div class="profile__info-city">
+								Санкт-Петербург, Россия
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 profile" data-online="true" data-new="true" data-popular="true" data-favorite="false">
+					<div class="profile__top">
+						<img src="img/diana.png" alt="" class="profile__photo">
+						<div class="profile__top-photos">
+							<img src="img/photos-icon.png" alt="photos">
+							<div>3</div> 
+						</div>
+						<div class="profile__top-popular">ТОП</div>
+						<div class="profile__top-contacts">
+							<div class="profile__top-contacts__favorite">
+								<div class="favorite-img"></div>
+								Избранное
+							</div>
+							<div class="profile__top-contacts__message">
+								<img src="img/message-icon.png" alt="message">
+								Написать
+							</div>
+						</div>
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-title"><div>
+							Диана, 20</div>
+							<div class="profile__info-online"></div>
+						</div>
+						<div class="profile__info-city">
+								Самара, Россия
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 profile" data-online="true" data-new="true" data-popular="true" data-favorite="false">
+					<div class="profile__top">
+						<img src="img/anya.png" alt="" class="profile__photo">
+						<div class="profile__top-photos">
+							<img src="img/photos-icon.png" alt="photos">
+							<div>145</div> 
+						</div>
+						<div class="profile__top-popular">ТОП</div>
+						<div class="profile__top-contacts">
+							<div class="profile__top-contacts__favorite">
+								<div class="favorite-img"></div>
+								Избранное
+							</div>
+							<div class="profile__top-contacts__message">
+								<img src="img/message-icon.png" alt="message">
+								Написать
+							</div>
+						</div>
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-title"><div>
+								Аня, 18</div>
+							<div class="profile__info-online"></div>
+						</div>
+						<div class="profile__info-city">
+								Ростов-на-Дону, Россия
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 profile" data-online="false" data-new="true" data-popular="false" data-favorite="false">
+					<div class="profile__top">
+						<img src="img/angelika.png" alt="" class="profile__photo">
+						<div class="profile__top-photos">
+							<img src="img/photos-icon.png" alt="photos">
+							<div>17</div> 
+						</div>
+						<div class="profile__top-popular">ТОП</div>
+						<div class="profile__top-contacts">
+							<div class="profile__top-contacts__favorite">
+								<div class="favorite-img"></div>
+								Избранное
+							</div>
+							<div class="profile__top-contacts__message">
+								<img src="img/message-icon.png" alt="message">
+								Написать
+							</div>
+						</div>
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-title"><div>
+								Анжелика, 27</div>
+							<div class="profile__info-online"></div>
+						</div>
+						<div class="profile__info-city">
+								Чебоксары, Россия
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 profile" data-online="true" data-new="true" data-popular="false" data-favorite="false">
+					<div class="profile__top">
+						<img src="img/larisa.png" alt="" class="profile__photo">
+						<div class="profile__top-photos">
+							<img src="img/photos-icon.png" alt="photos">
+							<div>12</div> 
+						</div>
+						<div class="profile__top-popular">ТОП</div>
+						<div class="profile__top-contacts">
+							<div class="profile__top-contacts__favorite">
+								<div class="favorite-img"></div>
+								Избранное
+							</div>
+							<div class="profile__top-contacts__message">
+								<img src="img/message-icon.png" alt="message">
+								Написать
+							</div>
+						</div>
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-title"><div>
+								Лариса, 32</div>
+							<div class="profile__info-online"></div>
+						</div>
+						<div class="profile__info-city">
+								Москва, Россия
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 profile" data-online="false" data-new="true" data-popular="false" data-favorite="true">
+					<div class="profile__top">
+						<img src="img/nastya.png" alt="" class="profile__photo">
+						<div class="profile__top-photos">
+							<img src="img/photos-icon.png" alt="photos">
+							<div>3</div> 
+						</div>
+						<div class="profile__top-popular">ТОП</div>
+						<div class="profile__top-contacts">
+							<div class="profile__top-contacts__favorite">
+								<div class="favorite-img"></div>
+								Избранное
+							</div>
+							<div class="profile__top-contacts__message">
+								<img src="img/message-icon.png" alt="message">
+								Написать
+							</div>
+						</div>
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-title"><div>
+								Настя, 21</div>
+							<div class="profile__info-online"></div>
+						</div>
+						<div class="profile__info-city">
+								Зеленоград, Россия
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 profile" data-online="false" data-new="true" data-popular="false" data-favorite="false">
+					<div class="profile__top">
+						<img src="img/eugeniya.png" alt="" class="profile__photo">
+						<div class="profile__top-photos">
+							<img src="img/photos-icon.png" alt="photos">
+							<div>4</div> 
+						</div>
+						<div class="profile__top-popular">ТОП</div>
+						<div class="profile__top-contacts">
+							<div class="profile__top-contacts__favorite">
+								<div class="favorite-img"></div>
+								Избранное
+							</div>
+							<div class="profile__top-contacts__message">
+								<img src="img/message-icon.png" alt="message">
+								Написать
+							</div>
+						</div>
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-title"><div>
+								Евгения, 30</div>
+							<div class="profile__info-online"></div>
+						</div>
+						<div class="profile__info-city">
+								Ростов-на-Дону, Россия
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 profile" data-online="false" data-new="true" data-popular="false" data-favorite="false">
+					<div class="profile__top">
+						<img src="img/olga.png" alt="" class="profile__photo">
+						<div class="profile__top-photos">
+							<img src="img/photos-icon.png" alt="photos">
+							<div>28</div> 
+						</div>
+						<div class="profile__top-popular">ТОП</div>
+						<div class="profile__top-contacts">
+							<div class="profile__top-contacts__favorite">
+								<div class="favorite-img"></div>
+								Избранное
+							</div>
+							<div class="profile__top-contacts__message">
+								<img src="img/message-icon.png" alt="message">
+								Написать
+							</div>
+						</div>
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-title"><div>
+								Ольга, 25</div>
+							<div class="profile__info-online"></div>
+						</div>
+						<div class="profile__info-city">
+								Казань, Россия
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			
+		
+		<div class="row justify-content-center" >
+			<nav aria-label="page nav">
+				<ul class="pagination">
+					<li class="page-item">
+					<a class="page-link" href="#" aria-label="Previous">
+						<span aria-hidden="true">&lt;</span>
+						<span class="sr-only">Previous</span>
+					</a>
+					</li>
+					<li class="page-item active"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">4</a></li>
+					<li class="page-item"><a class="page-link" href="#">5</a></li>
+					<li class="page-item"><a class="page-link" href="#">6</a></li>
+					<li class="page-item">
+					<a class="page-link" href="#" aria-label="Next">
+						<span aria-hidden="true">&gt;</span>
+						<span class="sr-only">Next</span>
+					</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</div>
+	<div id="toTop"><img src="img/toTop.png" alt="toTop"></div>
+	<footer>
+		<div class="container">
+			<div class="row justify-content-start">
+				<a href="" class="footer__nav first">Правила</a>
+				<a href="" class="footer__nav">Пользовательское соглашение</a>
+				<a href="" class="footer__nav">О проекте</a>
+				<a href="" class="footer__nav">Обратная связь</a>
+			</div>
+			<div class="row justify-content-start">
+				<span class="first info">©«KIKI». Лучший on-line сервис по поиску спонсоров и содержанок, 2015-2017 <br>
+						Администрация не несёт ответственности за размещённые анкеты. Вся информация на сайте предоставлена посетителями.</span>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
