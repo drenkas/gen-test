@@ -11,7 +11,7 @@ html, body {
 }
 a {
 	color: #333333;
-	font-family: "Roboto Medium";
+	font-weight: 500;
 }
 a:hover {
 	color: #333333;
@@ -244,7 +244,7 @@ header {
 	
 	&__categories {
 		margin-top: 40px;
-		font-family: "Roboto Medium";
+		font-weight: 500;
 		letter-spacing: 0.05em;
 		display: flex;
 		margin-left: 15px;
@@ -293,7 +293,7 @@ header {
 			&-title {
 				display: flex;
 				font-size: 18px;
-				font-family: "Roboto Medium";
+				font-weight: 500;
 				color: #366cf7;
 			}
 			&-city {
@@ -405,7 +405,7 @@ footer {
 		margin-right: 48px;
 		color: #777777;
 		font-size: 14px;
-		font-family: "Roboto Medium";
+		font-weight: 500;
 		letter-spacing: 0.05em;
 	}
 	.first {
